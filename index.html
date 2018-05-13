@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Starter Template - Materialize</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper">
+      <a id="logo-container" href="#" class="brand-logo">Currency Converter</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Navbar Link 1</a></li>
+        <li><a href="#">Navbar Link 2</a></li>
+        <li><a href="#">Navbar Link 3</a></li>
+        <li><a href="#">Navbar Link 4</a></li>
+        <li><a href="#">Navbar Link 5</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="#">Navbar Link 1</a></li>
+        <li><a href="#">Navbar Link 2</a></li>
+        <li><a href="#">Navbar Link 3</a></li>
+        <li><a href="#">Navbar Link 4</a></li>
+        <li><a href="#">Navbar Link 5</a></li>
+      </ul>
+
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+
+      <ul id="nav-mobile" class="right hide-on-large-only">
+        <li><a href="#"><i class="material-icons">search</i></a></li>
+        <li><a href="#"><i class="material-icons left">refresh</i></a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <h1 class="header center blue-text hide-on-med-and-down">Currency Converter</h1>
+      <div class="row center hide-on-med-and-down">
+        <h3 class="header col s12 light">Accurate and reliable live currency exchange rates and conversion</h3>
+      </div>
+      <br><br>
+
+      <div class="row">
+        <form class="col s12">
+            
+          <div class="row">
+              <div class="input-field col s12 m6">
+                <input id="base-currency-amt" type="number" step="any" class="validate">
+                <label for="base-currency-amt">Base Amount</label>
+              </div>
+              <div class="input-field col s12 m6">
+                <input type="text" id="autocomplete-input-1" class="autocomplete">
+                <label for="autocomplete-input">Base Currency</label>
+              </div>      
+          </div>
+
+          <div class="row center">
+            <i class="material-icons large" style="color:blue">import_export</i>
+          </div>
+
+          <div class="row">
+              <div class="input-field col s12 m6">
+                <input id="quote-currency-amt" type="number" step="any" class="validate">
+                <label for="quote-currency-amt">Quote Amount</label>
+              </div>  
+              <div class="input-field col s12 m6">
+                <input type="text" id="autocomplete-input-2" class="autocomplete">
+                <label for="autocomplete-input">Quote Currency</label>
+              </div>      
+          </div>
+
+          <div class="row center">
+              <a href="#" id="convert-button" class="btn-large waves-effect waves-light blue">Convert!</a>
+          </div>  
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+   <footer class="page-footer footer-copyright blue">
+      <div class="container ">
+      Made with love by <a class="orange-text text-lighten-3" href="#">Ashwani Gupta</a>
+      </div>
+      <br>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/index.js"></script>
+
+  </body>
+</html>
