@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-  <title>Starter Template - Materialize</title>
+  <title>Currency Converter PWA</title>
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -13,31 +13,28 @@
 <body>
   <nav class="light-blue lighten-1" role="navigation">
     <div class="nav-wrapper">
-      <a id="logo-container" href="#" class="brand-logo">Currency Converter</a>
+      <a id="logo-container" href="/" class="brand-logo">Currency Converter</a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="#">Navbar Link 1</a></li>
-        <li><a href="#">Navbar Link 2</a></li>
-        <li><a href="#">Navbar Link 3</a></li>
-        <li><a href="#">Navbar Link 4</a></li>
-        <li><a href="#">Navbar Link 5</a></li>
+        <li><a href="/rates">Exchange Rates</a></li>
+        <li><a href="/info">Info</a></li>
+        <li><a href="/contact">Contact</a></li>
       </ul>
 
       <ul id="nav-mobile" class="sidenav">
-        <li><a href="#">Navbar Link 1</a></li>
-        <li><a href="#">Navbar Link 2</a></li>
-        <li><a href="#">Navbar Link 3</a></li>
-        <li><a href="#">Navbar Link 4</a></li>
-        <li><a href="#">Navbar Link 5</a></li>
+        <li><a href="/rates">Exchange Rates</a></li>
+        <li><a href="/info">Info</a></li>
+        <li><a href="/contact">Contact</a></li>
       </ul>
 
       <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-
-      <ul id="nav-mobile" class="right hide-on-large-only">
-        <li><a href="#"><i class="material-icons">search</i></a></li>
-        <li><a href="#"><i class="material-icons left">refresh</i></a></li>
-      </ul>
+    
+      <div class="progress">
+        <div class="determinate"></div>
+      </div>  
     </div>
+    
   </nav>
+
   <div class="section no-pad-bot" id="index-banner">
     <div class="container">
       <h1 class="header center blue-text hide-on-med-and-down">Currency Converter</h1>
@@ -55,28 +52,29 @@
                 <label for="base-currency-amt">Base Amount</label>
               </div>
               <div class="input-field col s12 m6">
-                <input type="text" id="autocomplete-input-1" class="autocomplete">
-                <label for="autocomplete-input">Base Currency</label>
+                <input type="text" id="base-currency" class="autocomplete">
+                <label for="base-currency">Base Currency</label>
               </div>      
           </div>
 
-          <div class="row center">
+          <div class="row center" id="convert-icon-box">
             <i class="material-icons large" style="color:blue">import_export</i>
           </div>
 
           <div class="row">
               <div class="input-field col s12 m6">
-                <input id="quote-currency-amt" type="number" step="any" class="validate">
+                <input id="quote-currency-amt" type="number" step="any" class="validate" required>
                 <label for="quote-currency-amt">Quote Amount</label>
               </div>  
               <div class="input-field col s12 m6">
-                <input type="text" id="autocomplete-input-2" class="autocomplete">
-                <label for="autocomplete-input">Quote Currency</label>
+                <input type="text" id="quote-currency" class="autocomplete">
+                <label for="quote-currency">Quote Currency</label>
               </div>      
           </div>
 
           <div class="row center">
               <a href="#" id="convert-button" class="btn-large waves-effect waves-light blue">Convert!</a>
+              <a href="rates.html" class="btn-large waves-effect waves-light red">See Rates</a>
           </div>  
         </form>
       </div>
