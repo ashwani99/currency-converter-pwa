@@ -1,0 +1,16 @@
+{
+  "name": "currency-converter",
+  "version": "1.0.0",
+  "description": "Currency Converter PWA",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js --config config.json"
+  },
+  "author": "Ashwani Gupta",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "request": "^2.85.0"
+  }
+}
