@@ -103,20 +103,9 @@ if (location.pathname === '/' || location.pathname === '/index' || location.path
 (function registerServiceWorker() {
   if (!navigator.serviceWorker) return;
 
-  navigator.serviceWorker.register('/sw/index.js').then(function(reg) {
+  navigator.serviceWorker.register('./sw.js').then(function(reg) {
     console.log('Service Worker registered');
-    // if (reg.waiting) {
-    //   indexController._updateReady(reg.waiting);
-    //   return;
-    // }
-
-    // if (reg.installing) {
-    //   indexController._trackInstalling(reg.installing);
-    //   return;
-    // }
-
-    // reg.addEventListener('updatefound', function() {
-    //   indexController._trackInstalling(reg.installing);
-    // });
+  }).catch(function() {
+    console.log('An error occured during registering service worker')
   });
 })();

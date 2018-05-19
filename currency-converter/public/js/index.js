@@ -44,16 +44,16 @@ if (location.pathname === '/' || location.pathname === '/index' || location.path
     const baseCurrencySelector = document.querySelector('#base-currency-select');
     baseCurrencySelector.addEventListener('change', fetchRates);
 
-    const refreshButton = document.querySelector('#refresh-btn');
-    refreshButton.addEventListener('click', fetchRates);
+    const refreshButtons = document.querySelectorAll('.refresh-btn');
+    refreshButtons.forEach(function(refreshButton) {
+        refreshButton.addEventListener('click', fetchRates);
+    })
 
 
     function fetchRates() {
-        console.log('fired');
         if (baseCurrencySelector.value === '') return;
-        console.log('fefefef' + baseCurrencySelector.value);
+
         activateProgressBar();
-    
         // let baseCurrency = baseCurrencySelector.value;
         let url = `/api/rates?base=${baseCurrencySelector.value}`;
         

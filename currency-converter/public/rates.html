@@ -30,7 +30,7 @@
 
       <ul id="nav-mobile" class="right hide-on-large-only">
         <!-- <li><a href="#"><i class="material-icons">search</i></a></li> -->
-        <li><a href="#" id="refresh-btn"><i class="material-icons left">refresh</i></a></li>
+        <li><a href="#" class="refresh-btn"><i class="material-icons left">refresh</i></a></li>
       </ul>
     
       <div class="progress">
@@ -44,15 +44,19 @@
     <div class="container">
       <h1 class="header center blue-text hide-on-med-and-down">Exchange Rates</h1>
       
-      <div class="row">
-        <div class="col s12 input-field">
+      <div class="row center">
+        <div class="col s12 m12 l10 input-field">
           <select id="base-currency-select">
             <option value="" disabled selected>Base Currency</option>
           </select>
         </div>
-        <!-- <div class="col s1 right">
-          <img src="http://via.placeholder.com/100X100" alt="">
-        </div> -->
+        <div class="col l2 hide-on-med-and-down">
+          <!-- <img src="http://via.placeholder.com/100X100" alt=""> -->
+          <a href="#" class="refresh-btn btn-large waves-effect waves-light red">
+            <i class="material-icons">refresh</i>
+            Refresh
+          </a>
+        </div>
       </div>
 
       <ul id="rates-collection" class="collection">
